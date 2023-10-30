@@ -4,8 +4,6 @@
 // MIT Licence
 //
 
-import Stencil
-
 internal struct CallableBlock {
   let parameters: [String]
   let nodes: [NodeType]

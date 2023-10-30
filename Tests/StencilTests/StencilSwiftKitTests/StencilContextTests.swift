@@ -4,10 +4,10 @@
 // MIT Licence
 //
 
-import StencilSwiftKit
+import Stencil
 import XCTest
 
-final class ContextTests: XCTestCase {
+final class StencilContextTests: XCTestCase {
   func testEmpty() throws {
     let context = [String: Any]()
 

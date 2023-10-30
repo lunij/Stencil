@@ -5,7 +5,6 @@
 //
 
 import Foundation
-import Stencil
 
 public extension Filters {
   /// Filters for operations related to numbers

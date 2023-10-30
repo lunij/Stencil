@@ -5,7 +5,6 @@
 //
 
 @testable import Stencil
-@testable import StencilSwiftKit
 import XCTest
 
 final class ImportNodeTests: XCTestCase {

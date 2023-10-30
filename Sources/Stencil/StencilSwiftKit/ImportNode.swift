@@ -4,8 +4,6 @@
 // MIT Licence
 //
 
-import Stencil
-
 internal final class ImportNode: NodeType {
   let templateName: Variable
   let token: Token?

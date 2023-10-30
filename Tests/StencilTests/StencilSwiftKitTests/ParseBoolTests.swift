@@ -4,7 +4,7 @@
 // MIT Licence
 //
 
-@testable import StencilSwiftKit
+import Stencil
 import XCTest
 
 final class ParseBoolTests: XCTestCase {

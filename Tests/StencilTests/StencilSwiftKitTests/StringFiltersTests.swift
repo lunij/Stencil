@@ -6,7 +6,7 @@
 
 // swiftlint:disable file_length
 
-@testable import StencilSwiftKit
+import Stencil
 import XCTest
 
 final class StringFiltersTests: XCTestCase {

@@ -4,8 +4,8 @@
 // MIT Licence
 //
 
-@testable import StencilSwiftKit
 import XCTest
+@testable import Stencil
 
 final class SwiftIdentifierTests: XCTestCase {
   func testBasicString() {

@@ -4,7 +4,7 @@
 // MIT Licence
 //
 
-import StencilSwiftKit
+import Stencil
 import XCTest
 
 final class ParametersTests: XCTestCase {

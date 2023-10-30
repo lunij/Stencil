@@ -4,8 +4,6 @@
 // MIT Licence
 //
 
-import Stencil
-
 internal final class SetNode: NodeType {
   enum Content {
     case nodes([NodeType])

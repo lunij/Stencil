@@ -5,7 +5,6 @@
 //
 
 import Foundation
-import Stencil
 
 /// Namespace for filters
 public enum Filters {

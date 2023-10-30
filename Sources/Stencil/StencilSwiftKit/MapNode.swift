@@ -4,8 +4,6 @@
 // MIT Licence
 //
 
-import Stencil
-
 internal final class MapNode: NodeType {
   let resolvable: Resolvable
   let resultName: String

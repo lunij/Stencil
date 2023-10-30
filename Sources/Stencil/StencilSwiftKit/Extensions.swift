@@ -5,7 +5,6 @@
 //
 
 import PathKit
-import Stencil
 
 public extension Extension {
   /// Registers this package's tags and filters
