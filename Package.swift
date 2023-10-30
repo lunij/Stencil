@@ -4,7 +4,8 @@ import PackageDescription
 let package = Package(
     name: "Stencil",
     products: [
-        .library(name: "Stencil", targets: ["Stencil"])
+        .library(name: "Stencil", targets: ["Stencil"]),
+        .library(name: "StencilSwiftKit", targets: ["StencilSwiftKit"])
     ],
     dependencies: [
         .package(url: "https://github.com/kylef/PathKit.git", from: "1.0.1"),
@@ -17,6 +18,12 @@ let package = Package(
         .testTarget(name: "StencilTests", dependencies: [
             "Stencil",
             "Spectre"
+        ]),
+        .target(name: "StencilSwiftKit", dependencies: [
+            "Stencil"
+        ]),
+        .testTarget(name: "StencilSwiftKitTests", dependencies: [
+            "StencilSwiftKit"
         ])
     ],
     swiftLanguageVersions: [.v5]
