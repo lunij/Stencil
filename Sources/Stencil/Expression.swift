@@ -299,11 +299,11 @@ class InequalityExpression: EqualityExpression {
 func toNumber(value: Any) -> Number? {
   if let value = value as? Float {
     return Number(value)
-  } else if let value = value as? Double {
+  } else if let value = value as? DoubleConvertible, let value = try? value.toDouble() {
     return Number(value)
   } else if let value = value as? UInt {
     return Number(value)
-  } else if let value = value as? Int {
+  } else if let value = value as? IntConvertible, let value = try? value.toInt() {
     return Number(value)
   } else if let value = value as? Int8 {
     return Number(value)
@@ -330,4 +330,24 @@ func toNumber(value: Any) -> Number? {
   }
 
   return nil
+}
+
+public protocol DoubleConvertible {
+  func toDouble() throws -> Double
+}
+
+extension Double: DoubleConvertible {
+  public func toDouble() throws -> Double {
+    self
+  }
+}
+
+public protocol IntConvertible {
+  func toInt() throws -> Int
+}
+
+extension Int: IntConvertible {
+  public func toInt() throws -> Int {
+    self
+  }
 }
